@@ -14,12 +14,12 @@ $seconColor: #18a2bd;
 header {
 	background: url('../img/bg-header.jpg') no-repeat;
 	background-size: cover;
-	max-height: 122px;
+	max-height: 118px;
 	font-family: $font;
 	color: $mainColor;
 
 	.container { 
-		padding: 7px 8px 25px 8px;
+		padding: 9px 8px 25px 8px;
 
 		.row { 
 			justify-content: space-between;
@@ -31,11 +31,12 @@ header {
 			font-weight: 400;
 			line-height: 22px;
 			letter-spacing: 0.14px;
+			margin-top: -5px;
 			}
 
 			.header-container__img {
-				margin-left: 15px;
-				margin-right: 376px;
+				margin-left: 82px;
+    			margin-right: 336px;
 			}
 
 			.header-container__contacts {
@@ -52,7 +53,7 @@ header {
 
     				&-icon {
     					margin-right: 4px;
-    					margin-bottom: 10px;
+    					margin-bottom: 8px;
     					width: 26px;
 						height: 26px;
     				}
@@ -60,7 +61,7 @@ header {
 			}
 			.header-container__cta {
 				.button {
-					margin-bottom: 8px;
+					margin-bottom: 6px;
 				}
 			}
 		}	
@@ -88,9 +89,11 @@ nav {
     	align-items: center;
     	width: 1100px;
 		background: $mainColor;
+		margin-left: 60px;
+    	margin-top: -2px;
 
     	&-element {
-    		padding: 19px 18px;
+    		padding: 14px 18px;
     		position: relative;
     		text-decoration: none;
 			color: #fff;
@@ -99,6 +102,7 @@ nav {
 			&:hover {
 				background-color: #ffc000;
 				color: #000;
+  				transition: 0.6s;
 				
 				&::before {
 				content: "";
@@ -109,7 +113,7 @@ nav {
 				transform: rotate(0deg);
 				position: absolute;
 				left: 0px;
-		    	bottom: 27px;
+		    	bottom: 20px;
 				}
 
 				&::after {
@@ -121,7 +125,7 @@ nav {
 					transform: rotate(0deg);
 					position: absolute;
 					right: 0px;
-			    	bottom: 27px;
+			    	bottom: 20px;
 				}
 			}
     		
@@ -133,17 +137,18 @@ nav {
 	background: url('../img/bg-roll.jpg') no-repeat;
 	background-size: cover;
 	font-family: $font;
+	margin-bottom: 23px;
 
 	.container {
 		width: 1100px;
 	
 		.distributor-container{
-			padding-top: 20px; 
+			padding-top: 10px; 
 			width: 100%;
-	    	margin-left: 8px;
+	    	margin-left: 33px;
 
 			&__header {
-			padding: 27px 24px 17px 26px;
+			padding: 33px 24px 12px 25px;
 			background-color: $seconColor;
 
 				&-tile {
@@ -176,7 +181,7 @@ nav {
 					margin-bottom: 15px;
 					&+.distributor-container__desc-subtitle
 					{
-						margin-bottom: 10px;
+						margin-bottom: 4px;
 					}
 				}
 
@@ -205,11 +210,15 @@ nav {
 					margin: 3px auto;
     				display: block;
 				}
+				.distributor-container__desc-icon {
+					margin-bottom: -6px;
+				}
+				
 
-				.roll {
+				.distributor-container__roll {
 					position: absolute;
-					bottom: -45px;
-    				left: -180px;
+					bottom: -53px;
+    				left: -175px;
 				}	
 			}
 
@@ -257,7 +266,7 @@ nav {
 	&::before {
 		content: "";
 	    display: block;
-	    width: 23px;
+	    width: 22px;
 	    height: 2px;
 	    background-color: #222428;
 		transform: rotate(0deg);
@@ -269,7 +278,7 @@ nav {
 	&::after {
 		content: "";
 	    display: block;
-	    width: 23px;
+	    width: 22px;
 	    height: 2px;
 	    background-color: #222428;
 		transform: rotate(0deg);
@@ -281,6 +290,7 @@ nav {
 	&:hover {
 		background-color: $mainColor;
 		color: #fff;
+		transition: 0.6s;
 
 		&::before {
 		content: "";
@@ -302,7 +312,7 @@ nav {
 
 
 .container {
-	width: 1100px;
+	width: 1170px;
 	margin: 0 auto;
 
 	.row { 
